@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --color-fundo: #01062677;
+    --cor-text: #F2CA50;
+    --cor-borda: #034C8C;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    color: var(--cor-text);
+    font: none normal 2em 'Lato', Arial, sans-serif;
+    background-image: url("../img/backgroun.jpeg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding-top: 2%;
+    padding-bottom: 15px;
+    background-color: var(--color-fundo);
+
+
+
+}
+
+
+header h1, div#center-icon{
+    padding-top: 10px;
+    font-size: 3em;
+    text-align: center;
+    margin: auto;
+}
+
+main
+{
+    height: 1500px;
+    background-image: linear-gradient(to bottom, var(--color-fundo), #f2ca505e );
+    background-size: contain;
+
+}
+
+
+#about-me{
+
+    font-weight: bold;
+    font-size: 1.4em;
+    text-align: center;
+    p {
+        margin-bottom: 10px;
+    }
+
+    a:hover > img{
+        width: 70px;
+        height: 70px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.356);
+    }
+
+}
+section#galery{
+    padding-top: 45px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    height: 100vh;;
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        text-shadow: 3px 3px 4px var(--color-fundo);
+    }
+
+    h2 {
+        margin: 10px;
+        margin-top: 40px;
+        font-size: 3em;
+    }
+
+
+}
+
+.container-imagens
+{
+    padding-left: 10px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 5px;
+    border-radius: 5px;
+    img {
+        width: 350px;
+        height: 200px;
+    }
+
+    img:hover {
+        width: 400px;
+        height: 400px;
+    }
+    
+}
+
+.container-imagens::-webkit-scrollbar
+{
+    width: 0;
+}
