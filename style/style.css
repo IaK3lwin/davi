@@ -85,6 +85,15 @@ section#galery{
 
 }
 
+div#icon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
 .container-imagens
 {
     padding-left: 10px;
@@ -97,6 +106,7 @@ section#galery{
     img {
         width: 350px;
         height: 200px;
+        position: static;
     }
 
     img:hover {
